@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Army Supplies{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Army Supplies</h1>
+        <p>Your one-stop shop for all military supplies!</p>
+        <a href="{{ url_for('products') }}" class="btn btn-primary">Shop Now</a>
+    </div>
+</section>
+<section class="features">
+    <div class="container">
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Gear">
+            <h2>High-Quality Gear</h2>
+            <p>Discover our top-notch military gear that ensures reliability and durability.</p>
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Uniforms">
+            <h2>Professional Uniforms</h2>
+            <p>Browse through our range of professionally designed uniforms for all needs.</p>
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="Accessories">
+            <h2>Essential Accessories</h2>
+            <p>Find all the essential accessories to complement your gear and uniforms.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
